@@ -33,9 +33,11 @@ public class Main extends PApplet{
 			
 		}
 		
-		public void draw() {
+		public void draw() { 
 			background(255);
-			shape1.splitArray(arrayWords);
+			shape1.splitArray(arrayWords); //divide el array por espacios
+			
+			//FIGURAS EN MOVIMIENTO
 			rect1.drawRect(50, 400, y1);
 			y1-=1;
 			if (y1<0) {
@@ -76,10 +78,13 @@ public class Main extends PApplet{
 		}	
 		
 		public void mousePressed(){
-			if (mouseButton== RIGHT) {
+			if (mouseButton== RIGHT) { //FIGURA RANDOM CLICK DERECHO
 				boolean p=true;
+				//float s=random(2);
 				if(p==true) {
 				rect1.drawRect((int)random(100),(int)random(500),(int)random(500));}
+				//if(p==true && s==1) {
+				//circle1.drawCircle((int)random(100),(int)random(500),(int)random(500));}
 			}
 			
 		}
