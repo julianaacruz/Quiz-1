@@ -11,5 +11,13 @@ public class Rectangle extends Shape{
 		super(size, posX, posY, t);
 		this.app = app;
 	}
+	public void drawShape (int size, int posX, int posY, int dir) {
+		move (dir);
+		loop();
+		app.noStroke();
+		app.fill(0);
+		app.rectMode(PConstants.CENTER);
+		app.rect(posX,posY,size,size);
+	}
 
 }
