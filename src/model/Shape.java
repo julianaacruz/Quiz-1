@@ -24,18 +24,7 @@ public class Shape{
 			}
 		}
 	}
-	
-	public void drawShape(int size, int posX, int posY, int directionY) {
 		
-		
-		
-	}
-	
-	public void move (int directionY) {
-		
-		posY= posY + directionY;	
-	}
-	
 	public void loop () {
 			if (posY >= 500 + size) {
 			posY=0-size;

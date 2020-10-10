@@ -10,11 +10,10 @@ public class Circle extends Shape{
 		super(size, posX, posY,t);
 		this.app = app;
 	}
-	public void drawShape () {
-		move (1);
+	public void drawCircle(int size, int posX, int posY) {
 		loop();
 		app.noStroke();
-		app.fill(0);
+		app.fill(50);
 		app.ellipse(posX,posY,size,size);
 	}
 }
