@@ -12,7 +12,7 @@ public class Main extends PApplet{
 		private Shape shape1;
 		private Rectangle rect1;
 		private Circle circle1;
-		int y1=30, y2=40, y3=50;
+		int y1=30, y2=40, y3=50, y4=200, y5=100, y6=50, y7=300;
 
 		
 	public static void main(String[] args) {
@@ -38,18 +38,40 @@ public class Main extends PApplet{
 			shape1.splitArray(arrayWords);
 			rect1.drawRect(50, 400, y1);
 			y1-=1;
-			if (y1<0-y1) {
-				y1=500+y1;
+			if (y1<0) {
+				y1=500;
 			}
 			circle1.drawCircle(30,300,y2);
 			y2+=1;
-			if (y2>height+y1) {
+			if (y2>height) {
 				y2=0;
 			}
 			rect1.drawRect(20, 350, y3);
 			y3+=1;
-			if (y3>height+y1) {
+			if (y3>height) {
 				y3=0;
+			}
+			circle1.drawCircle(10,100,y4);
+			y4-=1;
+			if (y4<0) {
+				y4=500;
+			}
+			
+			circle1.drawCircle(60,250,y5);
+			y5+=1;
+			if (y5>height) {
+				y5=0;}
+			
+			rect1.drawRect(80, 50, y6);
+			y6+=1;
+			if (y6>height) {
+				y6=0;
+			}
+			
+			rect1.drawRect(10, 100, y7);
+			y7-=1;
+			if (y7<0) {
+				y7=500;
 			}
 		}	
 
