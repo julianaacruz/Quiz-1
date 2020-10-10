@@ -74,5 +74,14 @@ public class Main extends PApplet{
 				y7=500;
 			}
 		}	
+		
+		public void mousePressed(){
+			if (mouseButton== RIGHT) {
+				boolean p=true;
+				if(p==true) {
+				rect1.drawRect((int)random(100),(int)random(500),(int)random(500));}
+			}
+			
+		}
 
 }
